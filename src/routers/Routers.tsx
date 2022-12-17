@@ -1,4 +1,11 @@
-import { About, Contact, CSCheck, Home, ReportScam, TermsAndService } from 'pages';
+import {
+  About,
+  Contact,
+  Home,
+  ReportScam,
+  ScamDetail,
+  TermsAndService,
+} from 'pages';
 import * as React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
@@ -12,7 +19,7 @@ export function Routers(props: RouterProps) {
       <Route path='/contact' element={<Contact />} />
       <Route path='/report' element={<ReportScam />} />
       <Route path='/terms' element={<TermsAndService />} />
-      <Route path='/check' element={<CSCheck />} />
+      <Route path='/detail' element={<ScamDetail />} />
     </Routes>
   );
 }
