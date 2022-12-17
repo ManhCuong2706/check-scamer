@@ -42,14 +42,6 @@ export function Navbar({ navCount }: NavbarProps) {
         >
           Gửi tố cáo Scam
         </button>
-        <button
-          onClick={() => {
-            navigate('/check');
-          }}
-          className='w-56 mx-2 rounded-[8px] p-[6px] bg-blue-600 hover:bg-blue-500 text-white font-[600]'
-        >
-          Check bảo hiểm CS
-        </button>
       </div>
     </div>
   );

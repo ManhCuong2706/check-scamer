@@ -7,4 +7,6 @@ export interface Scamer {
   categories?: string[];
   image: string[];
   content?: string;
+  date: string;
+  review: number;
 }
