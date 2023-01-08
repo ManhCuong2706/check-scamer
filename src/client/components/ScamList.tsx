@@ -1,7 +1,6 @@
 import { Scamer } from 'Models';
-import * as React from 'react';
-import { FiEdit } from 'react-icons/fi';
 import { BiTimeFive } from 'react-icons/bi';
+import { FiEdit } from 'react-icons/fi';
 import { TfiEye } from 'react-icons/tfi';
 import { Link } from 'react-router-dom';
 
@@ -20,17 +19,17 @@ export function Scamlist({ ScList, scamerCount }: ScamlistProps) {
   let currentDate = `${day}/${month}/${year}`;
 
   return (
-    <div className='text-center'>
+    <div className='text-center max-w-screen-lg mx-auto'>
       <p className='text-blue-700 my-3'>
         {currentDate} CÓ {scamerCount} SCAM BỊ TỐ CÁO
       </p>
       {ScList.map((sc, i) => (
         <div
           key={sc.id}
-          className='h-[60px] leading-[60px] px-2 w-[70%] flex justify-between border border-spacing-1 mx-auto'
+          className=' h-[60px] leading-[60px] px-2 w-full flex justify-between border border-spacing-1 mx-auto'
         >
           <Link
-            to='/detail'
+            to={`/detail/${sc.id}`}
             className='flex justify-center align-middle items-center hover:text-blue-700 '
           >
             <FiEdit className='mr-2 text-blue-700 ' />
